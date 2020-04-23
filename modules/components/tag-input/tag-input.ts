@@ -525,7 +525,10 @@ export class TagInputComponent extends TagInputAccessor implements OnInit, After
     public selectItem(item: TagModel | undefined, emit = true): void {
         const isReadonly = item && typeof item !== 'string' && item.readonly;
 
-        if (isReadonly || this.selectedTag === item) {
+        // if (isReadonly || this.selectedTag === item) {
+        // Removed this.selectedTag === item condition
+        // Otherwise item selected does not get emited after the item is out of focus
+        if (isReadonly) {
             return;
         }
 
