@@ -780,8 +780,6 @@ export class TagInputComponent extends TagInputAccessor implements OnInit, After
      */
     public isTagValid = (tag: TagModel, fromAutocomplete = false): boolean => {
         const selectedItem = this.dropdown ? this.dropdown.selectedItem : undefined;
-        console.log("in isTagValid");
-        console.log("tag: ", tag);
         const value = this.getItemDisplay(tag).trim();
 
         if (selectedItem && !fromAutocomplete || !value) {
@@ -907,12 +905,8 @@ export class TagInputComponent extends TagInputAccessor implements OnInit, After
      */
     private addItem(fromAutocomplete = false, item: TagModel, index?: number, giveupFocus?: boolean):
         Promise<TagModel> {
-        console.log("in addItem");
-        console.log("item: ", item);
         const display = this.getItemDisplay(item);
-        console.log("getItemDisplay: ", display);
         const tag = this.createTag(item);
-        console.log("createTag: ", tag);
 
         if (fromAutocomplete) {
             this.setInputValue(this.getItemValue(item, true));
