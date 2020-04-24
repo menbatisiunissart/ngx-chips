@@ -1,11 +1,11 @@
 {
-  "name": "ngx-chips",
-  "version": "2.1.0",
-  "description": "Tag Input component for Angular",
+  "name": "custom-ngx-chips",
+  "version": "2.1.2",
+  "description": "Fork of ngx-chips - Tag Input component for Angular",
   "scripts": {
     "release": "npm run build && npm publish dist",
     "postrelease": "rm -rf dist",
-    "build": "ng-packagr -p package.json && mkdirp ./dist/dist && ncp ./modules/core/styles ./dist/core/styles && ncp ./dist/bundles/ngx-chips.umd.js ./dist/dist/ngx-chips.bundle.js",
+    "build": "ng-packagr -p package.json && mkdirp ./dist/dist && ncp ./modules/core/styles ./dist/core/styles && ncp ./dist/bundles/custom-ngx-chips.umd.js ./dist/dist/custom-ngx-chips.bundle.js",
     "server": "ng serve --port 3010",
     "start": "npm run server",
     "test": "ng test modules --browsers=ChromeHeadless --watch=false",
@@ -66,12 +66,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gbuomprisco/ngx-chips"
+    "url": "https://github.com/menbatisiunissart/ngx-chips"
   },
   "bugs": {
-    "url": "https://github.com/Gbuomprisco/ngx-chips/issues"
+    "url": "https://github.com/menbatisiunissart/ngx-chips/issues"
   },
-  "homepage": "https://github.com/Gbuomprisco/ngx-chips",
+  "homepage": "https://github.com/menbatisiunissart/ngx-chips",
   "$schema": "./node_modules/ng-packagr/package.schema.json",
   "ngPackage": {
     "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
