@@ -1,6 +1,6 @@
 {
   "name": "custom-ngx-chips",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "Fork of ngx-chips - Tag Input component for Angular",
   "scripts": {
     "release": "npm run build && npm publish dist",
